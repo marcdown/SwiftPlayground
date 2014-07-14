@@ -36,8 +36,8 @@ var tourDates = [
 tourDates["7/4"] = "Philadelphia, PA"
 tourDates
 
-let emptyArray = Int[]()
-let emptyDictionary = Dictionary<String, Int>()
+let emptyArray = [Int]()
+let emptyDictionary = [String:Int]()
 
 // Control Flow
 // if statement
@@ -57,7 +57,7 @@ for (date, city) in tourDates {
     println("\(date): \(city)")
 }
 var value = 0
-for i in 0..3 { // Omit upper value
+for i in 0..<3 { // Omit upper value
     value += i
 }
 value
